@@ -140,17 +140,6 @@
           <v-col cols="6"> </v-col>
         </v-row>
         <v-divider></v-divider>
-        <v-row>
-          <v-col cols="12">
-            <v-textarea
-              v-model="description"
-              name="input-7-1"
-              label="คำอธิบายร้าน"
-              value=""
-              hint="Hint text"
-            ></v-textarea>
-          </v-col>
-        </v-row>
 
         <v-row>
           <v-col cols="10"> </v-col>
@@ -161,116 +150,15 @@
                   <v-btn
                     :disabled="!valid"
                     v-bind="attrs"
+                    color="primary"
+                    nuxt
+                    to="/inspire"
                     v-on="on"
                     @click="validate"
                   >
-                    <v-btn color="primary" nuxt to="/inspire"> SUMMIT </v-btn>
+                    SUMMIT
                   </v-btn>
                 </template>
-
-                <v-card class="pa-4" elevation="11">
-                  <v-row>
-                    <v-col cols="12"> ยืนยันข้อมูล </v-col>
-                  </v-row>
-
-                  <v-divider></v-divider>
-
-                  <v-row>
-                    <v-col cols="6">
-                      <v-text-field
-                        :value="name"
-                        label="ชื่อร้าน"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="6">
-                      <v-text-field
-                        :value="genre"
-                        label="ประเภท"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                  </v-row>
-                  <v-row>
-                    <v-col cols="6">
-                      <v-text-field
-                        :value="opentime"
-                        label="เวลาเปิด"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="6">
-                      <v-text-field
-                        :value="closetime"
-                        label="เวลาปิด"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                  </v-row>
-                  <v-row>
-                    <v-col cols="6">
-                      <v-text-field
-                        :value="phone"
-                        label="เบอร์โทรศัพท์"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                  </v-row>
-                  <v-divider></v-divider>
-                  <v-row>
-                    <v-col cols="6">
-                      <v-text-field
-                        :value="add"
-                        label="ที่อยู่"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="2">
-                      <v-text-field
-                        :value="sub_district"
-                        label="ตำบล"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="2">
-                      <v-text-field
-                        :value="district"
-                        label="อำเภอ/แขวง"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="2">
-                      <v-text-field
-                        :value="province"
-                        label="จังหวัด"
-                        readonly
-                      ></v-text-field>
-                    </v-col>
-                  </v-row>
-                  <v-row>
-                    <v-col cols="12">
-                      <v-text-field
-                        :value="description"
-                        label="อธิบายร้าน"
-                        readonly
-                      >
-                      </v-text-field>
-                    </v-col>
-                  </v-row>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn color="primary" text @click="dialog = false">
-                      แก้ไข
-                    </v-btn>
-                    <v-btn
-                      color="primary"
-                      text
-                      @click=";(dialog = false), set(), reset()"
-                    >
-                      ตกลง
-                    </v-btn>
-                  </v-card-actions>
-                </v-card>
               </v-dialog>
             </div>
           </v-col>
