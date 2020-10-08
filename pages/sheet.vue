@@ -177,7 +177,7 @@ export default {
       add: '',
       Address: {},
       genre: '',
-      items: ['ร้านอาหาร', 'ร้านขนม', 'ร้านกาแฟ'],
+      items: ['ร้านอาหาร', 'ร้านขนม', 'ร้านกาแฟ', 'สถานบันเทิง', 'อื่นๆ'],
       arr: {},
       description: '',
       opentime: '',
