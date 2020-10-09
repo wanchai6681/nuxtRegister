@@ -5,7 +5,7 @@
       :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
-      app
+      appwd
     >
       <v-list>
         <v-list-item
@@ -77,7 +77,7 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: 'ร้านโปรด',
           to: '/inspire',
         },
       ],
